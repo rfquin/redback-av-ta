@@ -30,7 +30,7 @@ int main() {
   int y = 15;
   std::cout << " " << x << y << std::endl;
 
-  // print integer ratios of y:x till x > y
+  // print integer ratios of y:x while x < y
   // invalid ratios should print 0
   while (x < y) {
     std::cout << "ratio: " << (x != 0 ? (y / x) : 0) << std::endl;
@@ -39,7 +39,7 @@ int main() {
   }
 
   int i = 1, j = 1; // don't change values
-  if ((i != 3) & (j == 1)) {
+  if (i != 3 & j == 1) {
     std::cout << "j is 1 and i is not 3\n";
   } else {
     std::cout << "either j is NOT 1, or i is set to 3\n";
@@ -65,7 +65,7 @@ int main() {
   ptr->weight = 55.5;
 
   // Initialise with 5 integers
-  Foo foo({1,2,3,4,5});
+  Foo foo{1,2,3,4,5};
 
   return 0;
 }
