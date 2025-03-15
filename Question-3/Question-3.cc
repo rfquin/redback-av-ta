@@ -58,6 +58,8 @@ int main() {
                 print_speed(data);
                 out << std::endl;
             }
+            /* Catching all exceptions is a terrible practice; but in this case this is here purely to tell
+             * the compiler we can catch it *if* something happened. */
         } catch (std::exception) {};
     }
 

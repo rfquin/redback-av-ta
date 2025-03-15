@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/Users/quinny/projects/redback_OA/build",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++    -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -Wall -Wextra -Wpedantic -lpthread -o CMakeFiles/Question-1-out.dir/Question-1/Question-1.cc.o -c /Users/quinny/projects/redback_OA/Question-1/Question-1.cc",
+  "file": "/Users/quinny/projects/redback_OA/Question-1/Question-1.cc",
+  "output": "CMakeFiles/Question-1-out.dir/Question-1/Question-1.cc.o"
+},
+{
+  "directory": "/Users/quinny/projects/redback_OA/build",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++    -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -Wall -Wextra -Wpedantic -lpthread -o CMakeFiles/Question-2-out.dir/Question-2/Question-2.cc.o -c /Users/quinny/projects/redback_OA/Question-2/Question-2.cc",
+  "file": "/Users/quinny/projects/redback_OA/Question-2/Question-2.cc",
+  "output": "CMakeFiles/Question-2-out.dir/Question-2/Question-2.cc.o"
+},
+{
+  "directory": "/Users/quinny/projects/redback_OA/build",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++    -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -Wall -Wextra -Wpedantic -lpthread -o CMakeFiles/Question-3-out.dir/Question-3/Question-3.cc.o -c /Users/quinny/projects/redback_OA/Question-3/Question-3.cc",
+  "file": "/Users/quinny/projects/redback_OA/Question-3/Question-3.cc",
+  "output": "CMakeFiles/Question-3-out.dir/Question-3/Question-3.cc.o"
+}
+]

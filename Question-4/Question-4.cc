@@ -3,6 +3,7 @@
 
 #include "gmock/gmock.h"
 #include "gtest/gtest.h"
+using ::testing::_;
 
 /// Question 4: This is an extension task. Look at the interface class Observer. This class's responsibility 
 /// is to observe and react any changes happening to the EventEmitter class, which emits an event via calling `emitEvent`. 
@@ -23,6 +24,11 @@ class Actor;
 class Observer {
 public:
 	virtual void ReactToEvent(Actor* actor) = 0;
+};
+
+class MockObserver : public Observer {
+public:
+		MOCK_METHOD(void, ReactToEvent, (Actor* actor), (override));
 };
 
 class Actor {
@@ -49,9 +55,7 @@ public:
 	}
 
 };
-
 // This will not compile until you implement MockObserver.
-
 TEST(ActorTest, ObserversAreCalled) {
 	auto observer = std::make_shared<MockObserver>();
 	Actor actor = { observer };
