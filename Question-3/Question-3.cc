@@ -28,8 +28,9 @@
 std::vector<std::string> toVec(std::string s);
 
 int main() {
-    std::ifstream in("candump.log");
-    std::ofstream out("output.txt");
+    std::ifstream in("../Question-3/candump.log");
+    /* NOTE: After running ./Question-3-out, you will have to traverse back to Question-3 to find output.txt */
+    std::ofstream out("../Question-3/output.txt");
 
     /* Get the 'speeds' substring after the '#' */
     auto get_magnitude = [](std::string s) -> std::string { return s.substr(s.find('#') + 1); };
